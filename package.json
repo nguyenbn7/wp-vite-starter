@@ -1,0 +1,36 @@
+{
+  "name": "wp-vite-starter",
+  "private": true,
+  "type": "module",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "format": "prettier --write ./src",
+    "lint": "prettier --check ./src && eslint ./src",
+    "bundle": "vite build && node bundle"
+  },
+  "author": "Your Name",
+  "description": "Your description",
+  "keywords": [
+    "Wordpress",
+    "Tailwindcss"
+  ],
+  "license": "GPL-2.0-only",
+  "devDependencies": {
+    "@eslint/js": "^9.7.0",
+    "archiver": "^7.0.1",
+    "autoprefixer": "^10.4.19",
+    "eslint": "^9.7.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "globals": "^15.8.0",
+    "postcss": "^8.4.39",
+    "prettier": "^3.3.3",
+    "tailwindcss": "^3.4.6",
+    "vite": "^5.3.4"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.6.0"
+  }
+}
