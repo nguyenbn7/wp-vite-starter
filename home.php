@@ -16,7 +16,7 @@
 get_header();
 ?>
 
-<h1 class="text-3xl font-bold underline">Hello World</h1>
+<h1 class="text-3xl font-bold underline">Hello World <i class="fa-regular fa-face-smile"></i></h1>
 <h3 id="test"></h3>
 
 <?php

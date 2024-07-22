@@ -14,9 +14,9 @@ export default ({ mode }) => {
   process.env = { ...process.env, ...loadEnv(mode, process.cwd()) };
 
   const base =
-    mode === "development" ? "/" : `/wp-content/themes/${folderName}/assets`;
+    mode === "development" ? "/" : `${process.env.VITE_PREFIX_PATH ?? ''}/wp-content/themes/${folderName}/assets`;
 
-  console.log(`base path used: ${base}`);
+  if (mode === "production") console.log(`base path used: ${base}`);
 
   return defineConfig({
     root: "./src",
@@ -45,5 +45,9 @@ export default ({ mode }) => {
         },
       },
     },
+    server: {
+      // Fix loading font in dev server
+      origin: "http://localhost:5173"
+    }
   });
 };

@@ -26,8 +26,10 @@
     <?php wp_head(); ?>
 
     <?php if (is_development_environment()) : ?>
+        <!-- Must also include files in src to get from dev server -->
         <script type="module" src="http://localhost:5173/@vite/client"></script>
         <script type="module" src="http://localhost:5173/index.css"></script>
+        <script type="module" src="http://localhost:5173/fontawesome.js"></script>
         <script type="module" src="http://localhost:5173/index.js"></script>
     <?php endif ?>
 
