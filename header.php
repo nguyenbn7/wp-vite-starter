@@ -27,7 +27,8 @@
 
     <?php if (is_development_environment()) : ?>
         <script type="module" src="http://localhost:5173/@vite/client"></script>
-        <script type="module" src="http://localhost:5173/main.js"></script>
+        <script type="module" src="http://localhost:5173/index.css"></script>
+        <script type="module" src="http://localhost:5173/index.js"></script>
     <?php endif ?>
 
 </head>

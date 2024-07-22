@@ -14,7 +14,7 @@ export default ({ mode }) => {
   process.env = { ...process.env, ...loadEnv(mode, process.cwd()) };
 
   const base =
-    mode === "development" ? "/" : `/wp-content/themes/${folderName}/dist`;
+    mode === "development" ? "/" : `/wp-content/themes/${folderName}/assets`;
 
   console.log(`base path used: ${base}`);
 
